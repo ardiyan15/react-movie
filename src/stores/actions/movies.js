@@ -37,7 +37,7 @@ export const searchMovie = ({ keyword }) => {
   return async (dispatch) => {
     try {
       const result = await axios.get(
-        `http://www.omdbapi.com/?apikey=8240f7c5&s=${keyword}`
+        `http://www.omdbapi.com/?apikey=faf7e5bb&s=${keyword}`
       );
       let loadMovies;
       if (result.data.Response === "False") {
